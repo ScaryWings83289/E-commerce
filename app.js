@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
 
 // Set the default views directory to public folder
-app.use(express.static(path.join(__dirname, 'public/css')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
